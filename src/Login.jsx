@@ -5,13 +5,11 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
-    // Implement login logic here
     console.log("Email:", email);
     console.log("Password:", password);
 
-    // Reset form after submission (optional)
     setEmail("");
     setPassword("");
   };
